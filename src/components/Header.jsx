@@ -3,10 +3,12 @@ import NavHeader from "./NavHeader";
 
 const Header = () => {
   return (
-    <>
-      <Logo />
-      <NavHeader />
-    </>
+    <header>
+      <div className="container">
+        <Logo />
+        <NavHeader />
+      </div>
+    </header>
   )
 }
 

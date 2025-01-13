@@ -2,7 +2,7 @@ import imgLogo from '../../assets/img/dc-logo.png';
 
 const Logo = () => {
   return (
-    <img src={imgLogo} alt="" />
+    <img className='logo' src={imgLogo} alt="" />
   )
 }
 

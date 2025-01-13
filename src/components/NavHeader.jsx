@@ -3,7 +3,7 @@ const NavHeader = () => {
     <nav>
       <ul>
         <li><a href="#">Characters</a></li>
-        <li><a href="#">Comics</a></li>
+        <li><a className="active" href="#">Comics</a></li>
         <li><a href="#">Movies</a></li>
         <li><a href="#">TV</a></li>
         <li><a href="#">Games</a></li>
