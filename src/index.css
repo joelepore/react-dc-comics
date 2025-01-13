@@ -92,3 +92,36 @@ main {
   color: white;
   padding-block: 4rem;
 }
+
+/* NavFeatures */
+.nav-features {
+  background-color: var(--color-blue);
+  padding: 5rem 0;
+}
+
+.nav-features .container {
+  height: 100%;
+}
+
+.nav-features ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-features a {
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-features a img {
+  height: 60px;
+}
+
+.nav-features li:last-child a img {
+  height: 40px;
+}
