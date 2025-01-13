@@ -1,6 +1,8 @@
 :root {
   --color-blue: #0282f9;
   --color-main: #1c1c1c;
+  --color-footer-bottom: #303030;
+  --color-footer-link: gray;
   --h-header: 130px;
 }
 
@@ -124,4 +126,68 @@ main {
 
 .nav-features li:last-child a img {
   height: 40px;
+}
+
+/* Footer */
+footer h4 {
+  color: white;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 1.2rem;
+  padding-block: 1rem;
+}
+
+footer a {
+  color: var(--color-footer-link);
+  font-size: .9rem;
+}
+
+.footer-top {
+  background-image: url('./assets/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-top .container {
+  padding: 3rem 0;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-top img {
+  position: absolute;
+  right: 0;
+  top: -60px;
+}
+
+.footer-bottom {
+  background-color: var(--color-footer-bottom);
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-bottom-right a:first-child {
+  text-transform: uppercase;
+  color: var(--color-blue);
+  font-size: 1.1rem;
+  font-family: Oswald;
+}
+
+.footer-bottom nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
 }
