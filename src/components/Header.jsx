@@ -1,12 +1,12 @@
 import Logo from "./partials/Logo";
 import NavHeader from "./NavHeader";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className="container">
         <Logo />
-        <NavHeader />
+        <NavHeader menu={props.menu} />
       </div>
     </header>
   )

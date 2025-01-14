@@ -1,4 +1,4 @@
-export const navItems = [
+export const headerNavItems = [
   { id: 1, url: "#", text: "Characters", isActive: false },
   { id: 2, url: "#", text: "Comics", isActive: true },
   { id: 3, url: "#", text: "Movies", isActive: false },

@@ -1,8 +1,12 @@
-const NavHeader = () => {
+const NavHeader = (props) => {
+  const { menu } = props;
   return (
     <nav>
       <ul>
-        <li><a href="#">Characters</a></li>
+        {menu.map(item => (
+          <li key={item.id}><a className={item.isActive ? 'active' : ''} href={item.url}>{item.text}</a></li>
+        ))}
+        {/* <li><a href="#">Characters</a></li>
         <li><a className="active" href="#">Comics</a></li>
         <li><a href="#">Movies</a></li>
         <li><a href="#">TV</a></li>
@@ -11,7 +15,7 @@ const NavHeader = () => {
         <li><a href="#">Videos</a></li>
         <li><a href="#">Fans</a></li>
         <li><a href="#">News</a></li>
-        <li><a href="#">Shop</a></li>
+        <li><a href="#">Shop</a></li> */}
       </ul>
     </nav>
   )
