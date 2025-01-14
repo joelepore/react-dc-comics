@@ -3,7 +3,7 @@ import Main from "./components/Main"
 import NavFeatures from "./components/NavFeatures"
 import Footer from "./components/Footer"
 // Data
-import { headerNavItems } from "./data/menuData"
+import { headerNavItems, footerNavItems } from "./data/menuData"
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Header menu={headerNavItems} />
       <Main />
       <NavFeatures />
-      <Footer />
+      <Footer data={footerNavItems} />
     </>
   )
 }
