@@ -19,7 +19,7 @@ const Footer = (props) => {
               <h4>DC Comics</h4>
               <ul>
                 {footerNavItems.dcComics.map(item => (
-                  <li key={item.id}><a href={item.url}>{item.text}</a></li>
+                  <li key={`dccomics-${item.id}`}><a href={item.url}>{item.text}</a></li>
                 ))}
               </ul>
             </div>
@@ -27,7 +27,7 @@ const Footer = (props) => {
               <h4>Shop</h4>
               <ul>
                 {footerNavItems.shop.map(item => (
-                  <li key={item.id}><a href={item.url}>{item.text}</a></li>
+                  <li key={`shop-${item.id}`}><a href={item.url}>{item.text}</a></li>
                 ))}
               </ul>
             </div>
@@ -37,7 +37,7 @@ const Footer = (props) => {
               <h4>DC</h4>
               <ul>
                 {footerNavItems.dc.map(item => (
-                  <li key={item.id}><a href={item.url}>{item.text}</a></li>
+                  <li key={`dc-${item.id}`}><a href={item.url}>{item.text}</a></li>
                 ))}
               </ul>
             </div>
@@ -47,7 +47,7 @@ const Footer = (props) => {
               <h4>Sites</h4>
               <ul>
                 {footerNavItems.sites.map(item => (
-                  <li key={item.id}><a href={item.url}>{item.text}</a></li>
+                  <li key={`sites-${item.id}`}><a href={item.url}>{item.text}</a></li>
                 ))}
               </ul>
             </div>
