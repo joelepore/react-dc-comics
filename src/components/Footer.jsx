@@ -6,6 +6,8 @@ import imgYouTube from "../assets/img/footer-youtube.png"
 import imgPinterest from "../assets/img/footer-pinterest.png"
 import imgPeriscope from "../assets/img/footer-periscope.png"
 
+const btnText = 'SIGN UP NOW!';
+
 const Footer = () => {
   return (
     <footer>
@@ -67,7 +69,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="container">
-          <Button text={"SIGN-UP NOW!"} />
+          <Button text={btnText} />
           <div className="footer-bottom-right">
             <a href="#">Follow Us</a>
             <nav>
