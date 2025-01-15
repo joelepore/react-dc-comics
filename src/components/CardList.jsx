@@ -10,7 +10,8 @@ const CardList = (props) => {
         <Card
           key={`comicCard-${card.id}`}
           title={card.series}
-          img={card.thumb} />
+          img={card.thumb}
+        />
       ))}
     </div>
   )

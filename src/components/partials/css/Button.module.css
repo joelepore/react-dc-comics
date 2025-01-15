@@ -1,0 +1,14 @@
+.button {
+  font-weight: bold;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: 3px solid #0282f9;
+}
+
+.solid {
+  background-color: #0282f9;
+  color: white;
+  padding: 5px 80px;
+  font-family: Oswald, sans-serif;
+}
