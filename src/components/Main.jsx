@@ -1,8 +1,14 @@
+import CardList from "./CardList"
+import Label from "./partials/Label"
+
+import comics from "../data/comics"
+
 const Main = () => {
   return (
     <main>
       <div className="container">
-        <h1>Content Goes Here</h1>
+        <Label text="CURRENT SERIES" type="offset" />
+        <CardList data={comics} />
       </div>
     </main>
   )

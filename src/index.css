@@ -93,6 +93,7 @@ main {
   background-color: var(--color-main);
   color: white;
   padding-block: 4rem;
+  position: relative;
 }
 
 /* NavFeatures */

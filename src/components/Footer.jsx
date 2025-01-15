@@ -1,4 +1,6 @@
 import Button from "./partials/Button"
+import FooterListItem from "./partials/FooterListItem"
+
 import imgFooterLogo from "../assets/img/dc-logo-bg.png"
 import imgFacebook from "../assets/img/footer-facebook.png"
 import imgTwitter from "../assets/img/footer-twitter.png"
@@ -19,7 +21,7 @@ const Footer = (props) => {
               <h4>DC Comics</h4>
               <ul>
                 {footerNavItems.dcComics.map(item => (
-                  <li key={`dccomics-${item.id}`}><a href={item.url}>{item.text}</a></li>
+                  <FooterListItem key={`dccomics-${item.id}`} data={item} />
                 ))}
               </ul>
             </div>
@@ -27,7 +29,7 @@ const Footer = (props) => {
               <h4>Shop</h4>
               <ul>
                 {footerNavItems.shop.map(item => (
-                  <li key={`shop-${item.id}`}><a href={item.url}>{item.text}</a></li>
+                  <FooterListItem key={`shop-${item.id}`} data={item} />
                 ))}
               </ul>
             </div>
@@ -37,7 +39,7 @@ const Footer = (props) => {
               <h4>DC</h4>
               <ul>
                 {footerNavItems.dc.map(item => (
-                  <li key={`dc-${item.id}`}><a href={item.url}>{item.text}</a></li>
+                  <FooterListItem key={`dc-${item.id}`} data={item} />
                 ))}
               </ul>
             </div>
@@ -47,7 +49,7 @@ const Footer = (props) => {
               <h4>Sites</h4>
               <ul>
                 {footerNavItems.sites.map(item => (
-                  <li key={`sites-${item.id}`}><a href={item.url}>{item.text}</a></li>
+                  <FooterListItem key={`sites-${item.id}`} data={item} />
                 ))}
               </ul>
             </div>
