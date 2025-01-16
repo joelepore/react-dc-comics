@@ -11,7 +11,7 @@ const Main = () => {
         <Label text="CURRENT SERIES" type="offset" />
         <CardList data={comics} />
         <div className="text-center mt-3">
-          <Button text='LOAD MORE' type='solid' className="text-center" />
+          <Button text='LOAD MORE' type='solid' />
         </div>
       </div>
     </main>
