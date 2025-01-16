@@ -3,7 +3,9 @@ const Jumbotron = (props) => {
   const img = props.img;
   const alt = props.alt;
   return (
-    <img className={style.jumbo} src={img} alt={alt} />
+    <div>
+      <img className={style.jumbo} src={img} alt={alt} />
+    </div>
 
   )
 }
