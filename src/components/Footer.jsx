@@ -2,11 +2,6 @@ import Button from "./partials/Button"
 import FooterListItem from "./partials/FooterListItem"
 
 import imgFooterLogo from "../assets/img/dc-logo-bg.png"
-import imgFacebook from "../assets/img/footer-facebook.png"
-import imgTwitter from "../assets/img/footer-twitter.png"
-import imgYouTube from "../assets/img/footer-youtube.png"
-import imgPinterest from "../assets/img/footer-pinterest.png"
-import imgPeriscope from "../assets/img/footer-periscope.png"
 
 const btnText = 'SIGN UP NOW!';
 
@@ -64,11 +59,11 @@ const Footer = (props) => {
             <a href="#">Follow Us</a>
             <nav>
               <ul>
-                <li><a href="#"><img src={imgFacebook} alt="Facebook Logo" /></a></li>
-                <li><a href="#"><img src={imgTwitter} alt="Twitter Logo" /></a></li>
-                <li><a href="#"><img src={imgYouTube} alt="YouTube Logo" /></a></li>
-                <li><a href="#"><img src={imgPinterest} alt="Pinterest Logo" /></a></li>
-                <li><a href="#"><img src={imgPeriscope} alt="Periscope Logo" /></a></li>
+                {footerNavItems.footerBottom.map(item => (
+                  <li key={`footer-bottom-${item.id}`}>
+                    <a href={item.url}><img src={item.img} alt="Logo" /></a>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>

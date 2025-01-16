@@ -44,4 +44,11 @@ export const footerNavItems = {
     { id: 4, url: "#", text: "DC Universe" },
     { id: 5, url: "#", text: "DC Power Visa" },
   ],
+  footerBottom: [
+    { id: 1, url: "#", img: "/img/footer-facebook.png" },
+    { id: 2, url: "#", img: "/img/footer-twitter.png" },
+    { id: 3, url: "#", img: "/img/footer-youtube.png" },
+    { id: 4, url: "#", img: "/img/footer-pinterest.png" },
+    { id: 5, url: "#", img: "/img/footer-periscope.png" }
+  ]
 };
